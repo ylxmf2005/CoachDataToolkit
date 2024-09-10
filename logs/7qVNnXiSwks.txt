@@ -1,0 +1,18 @@
+Analysis:
+1. **Coach Identification**: The speakers identified as coaches are [SPEAKER_02], [SPEAKER_03], and [SPEAKER_00]. These speakers are involved in coaching interactions with coachees.
+2. **Coachee Identification**: The speakers identified as coachees are [SPEAKER_01] and [SPEAKER_04]. These speakers are the ones being coached.
+3. **Marker Identification**: The speaker [SPEAKER_02] often comments or evaluates the coaching process, making them a marker.
+4. **Session Identification**: There are two distinct coaching sessions identified in the transcription. The first session involves [SPEAKER_03] (coach) and [SPEAKER_01] (coachee), and the second session involves [SPEAKER_00] (coach) and [SPEAKER_04] (coachee).
+
+Final output:
+```json
+{
+    "[SPEAKER_00]" : "Coach",
+    "[SPEAKER_01]" : "Coachee",
+    "[SPEAKER_02]" : "Marker",
+    "[SPEAKER_03]" : "Coach",
+    "[SPEAKER_04]" : "Coachee",
+    "Session 1" : [154, 310],
+    "Session 2" : [453, 638]
+}
+```

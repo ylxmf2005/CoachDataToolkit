@@ -1,0 +1,39 @@
+```
+{raw_transcription}
+```
+
+Above is a raw psychological coaching video transcription.
+Your task is to identify the following:
+1. Coach Identification: Determine which speaker(s) are the coach.
+2. Coachee Identification: Identify which speaker(s) are the coachee(s).
+3. Marker Identification: Identify if there is a speaker commenting or evaluating the coaching process, not part of direct interaction between coach and coachee. Marker may be a thrid-party or coach himeself.
+4. Session Identification: Determine how many coaching sessions are present. For each session, provide the duration using line numbers. Note that a session starts when the coach and coachee begin interacting directly (instead coach speaking alone), and ends with the formal conclusion of their interaction.
+
+Use the JSON format to output finally, please reference the format of example. Before the finnal output, you are required to analyze the task comprehensively first.
+
+A Speaker may have multiple roles, which should be represented as a list in the final output. If a speaker cannot be labeled as either "Coach," "Coachee," or "Marker," please label the speaker as "Unknown".
+
+Example input:
+1. [SPEAKER_03]: Welcome to our coaching session video series!
+2. [SPEAKER_01]: Let's dive into our session now.
+3. [SPEAKER_01]: What would you like to focus on today?
+4. [SPEAKER_00]: Well, I've been feeling overwhelmed at work  I'm not sure how to balance my personal life with my job demands.
+5. [SPEAKER_02]: Notice how the coachee is expressing a need for balance in their life.
+6. [SPEAKER_00]: I think I'd be happier if I could just be more creative and play more often.
+...
+15. [SPEAKER_01]: Goodbye.
+16. [SPEAKER_00]: Bye, thankyou for you coaching.
+
+Example output:
+Analysis:
+...
+Final output:
+```json
+{{
+    "[SPEAKER_00]" : "Coachee",
+    "[SPEAKER_01]" : "Coach",
+    "[SPEAKER_02]" : "Marker",
+    "[SPEAKER_03]" : "Unknown",
+    "Session 1" : [3, 16]
+}}
+```

@@ -1,0 +1,15 @@
+Analysis:
+1. **Coach Identification**: The coach is identified as the speaker who is guiding the session and asking questions to the coachee. In this transcription, **[SPEAKER_06]** is the coach, as they are asking questions and facilitating the session.
+2. **Coachee Identification**: The coachee is the individual who is being coached and responding to the coach's questions. In this transcription, **[SPEAKER_03]** is the coachee, as they are the one being coached.
+3. **Marker Identification**: The marker is the speaker who is commenting or evaluating the coaching process, not part of the direct interaction between the coach and coachee. In this transcription, **[SPEAKER_00]** is the marker, as they are providing commentary and evaluation of the coaching session.
+4. **Session Identification**: The coaching session starts when the coach and coachee begin interacting directly and ends with the formal conclusion of their interaction. In this transcription, there is one coaching session that starts at line 9 and ends at line 471.
+
+Final output:
+```json
+{
+    "[SPEAKER_00]" : "Marker",
+    "[SPEAKER_03]" : "Coachee",
+    "[SPEAKER_06]" : "Coach",
+    "Session 1" : [9, 471]
+}
+```

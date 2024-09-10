@@ -1,0 +1,38 @@
+Your task is to label a raw psychological coaching video transcription:
+
+1. before_start: Before the coaching conversation starts(start refers to coach and coachee talking to each other instead of coach speaking alone).
+2. start_coaching_with_coach_to_coachee / start_coaching_with_coachee_to_coach: The beginning of the coaching session where both the coach and coachee start their interaction. 
+3. coach_to_coachee
+4. coachee_to_coach
+5. marker: Commentary or evaluation during the coaching process (from start_coaching to end_coaching), not part of the direct interaction between coach and coachee. Marker can be coach himself or a thrid-party.
+6. end_coaching_with_coach_to_coachee / end_coaching_with_coachee_to_coach: The conclusion of the coaching session where the interaction between the coach and coachee formally ends.
+7. after_end: After the coaching conversation ends.
+
+There may be multiple coaching sessions.
+
+
+Example input:
+```
+1. [SPEAKER_01]: Welcome to our coaching session video series!
+2. [SPEAKER_01]: Let's dive into our session now.
+3. [SPEAKER_01]: What would you like to focus on today?
+4. [SPEAKER_00]: Well, I've been feeling overwhelmed at work  I'm not sure how to balance my personal life with my job demands.
+5. [SPEAKER_02]: Notice how the coachee is expressing a need for balance in their life.
+6. [SPEAKER_00]: I think I'd be happier if I could just be more creative and play more often.
+...
+```
+
+Example output:
+```
+1. [SPEAKER_01]: Welcome to our coaching session video series! [before_start]
+2. [SPEAKER_01]: Let's dive into our session now. [before_start]
+3. [SPEAKER_01]: What would you like to focus on today? [start_coaching_with_coach_to_coachee]
+4. [SPEAKER_00]: Well, I've been feeling overwhelmed at work  I'm not sure how to balance my personal life with my job demands. [coachee_to_coach]
+5. [SPEAKER_02]: Notice how the coachee is expressing a need for balance in their life. [marker]
+6. [SPEAKER_00]: I think I'd be happier if I could just be more creative and play more often. [coachee_to_coach]
+```
+
+Your input:
+```
+{raw_transcription}
+```
