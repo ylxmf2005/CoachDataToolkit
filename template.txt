@@ -3,37 +3,53 @@
 ```
 
 Above is a raw psychological coaching video transcription.
-Your task is to identify the following:
-1. Coach Identification: Determine which speaker(s) are the coach.
-2. Coachee Identification: Identify which speaker(s) are the coachee(s).
-3. Marker Identification: Identify if there is a speaker commenting or evaluating the coaching process, not part of direct interaction between coach and coachee. Marker may be a thrid-party or coach himeself.
-4. Session Identification: Determine how many coaching sessions are present. For each session, provide the duration using line numbers. Note that a session starts when the coach and coachee begin interacting directly (instead coach speaking alone), and ends with the formal conclusion of their interaction.
+Follow the 3 steps to complete your task:
 
-Use the JSON format to output finally, please reference the format of example. Before the finnal output, you are required to analyze the task comprehensively first.
+Step1: 
+Determine how many coaching sessions are present. 
+A session starts when the interaction between the coach and coachee begins.
+A session ends when:
+- If there is no commentary or epilogue from the Marker, end at the formal conclusion of the coaching interaction.
+- If there is a Marker’s final commentary or epilogue after the coaching interaction, extend the end to include the Marker's final words.
 
-A Speaker may have multiple roles, which should be represented as a list in the final output. If a speaker cannot be labeled as either "Coach," "Coachee," or "Marker," please label the speaker as "Unknown".
+For each session, detemine the start line number and end line number
 
-Example input:
-1. [SPEAKER_03]: Welcome to our coaching session video series!
-2. [SPEAKER_01]: Let's dive into our session now.
-3. [SPEAKER_01]: What would you like to focus on today?
-4. [SPEAKER_00]: Well, I've been feeling overwhelmed at work  I'm not sure how to balance my personal life with my job demands.
-5. [SPEAKER_02]: Notice how the coachee is expressing a need for balance in their life.
-6. [SPEAKER_00]: I think I'd be happier if I could just be more creative and play more often.
-...
-15. [SPEAKER_01]: Goodbye.
-16. [SPEAKER_00]: Bye, thankyou for you coaching.
+Step2:
+For each session identified in Step 1, analyze each speaker's role based on the following definitions:
+- Coach
+- Coachee
+- Marker: A thrid-party (not coach/coachee themselves) speaker comments/evaluates the coaching process or just narrates, not part of direct interaction between coach and coachee. 
+- Uninvolved: The speaker doesn't take part in this session / The speaker's role is unknown (can not be labeled as Coach/Coachee/Marker).
+
+Step3:
+Structure the output in JSON format as illustrated in the example below. Session index starts from 0.
 
 Example output:
-Analysis:
+Step1:
 ...
-Final output:
+Step2:
+...
+Step3:
 ```json
 {{
-    "[SPEAKER_00]" : "Coachee",
-    "[SPEAKER_01]" : "Coach",
-    "[SPEAKER_02]" : "Marker",
-    "[SPEAKER_03]" : "Unknown",
-    "Session 1" : [3, 16]
+    "Session 0" : [start1, end1],
+    "Session 1" : [start2, end2],
+    "[SPEAKER_00]" : {{
+        "Session 0" : "Coach",
+        "Session 1" : "Marker"
+    }}
+    "[SPEAKER_01]" : {{
+        "Session 0" : "Marker",
+        "Session 1" : "Coach",
+    }}
+    
+    "[SPEAKER_02]" : {{
+        "Session 0" : "Coachee",
+        "Session 1" : "Uninvolved"
+    }}
+    "[SPEAKER_03]" : {{
+        "Session 0" : "Uninvolved",
+        "Session 1" : "Coachee and Marker"
+    }}
 }}
 ```

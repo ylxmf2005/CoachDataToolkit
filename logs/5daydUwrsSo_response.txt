@@ -1,0 +1,36 @@
+Step1:
+There is 1 coaching session.
+- Session 0: [8, 470]
+
+Step2:
+- [SPEAKER_00]: Marker
+- [SPEAKER_06]: Coach
+- [SPEAKER_03]: Coachee
+- [SPEAKER_07]: Uninvolved
+- [SPEAKER_04]: Uninvolved
+- [SPEAKER_02]: Uninvolved
+
+Step3:
+```json
+{
+    "Session 0": [8, 470],
+    "[SPEAKER_00]": {
+        "Session 0": "Marker"
+    },
+    "[SPEAKER_06]": {
+        "Session 0": "Coach"
+    },
+    "[SPEAKER_03]": {
+        "Session 0": "Coachee"
+    },
+    "[SPEAKER_07]": {
+        "Session 0": "Uninvolved"
+    },
+    "[SPEAKER_04]": {
+        "Session 0": "Uninvolved"
+    },
+    "[SPEAKER_02]": {
+        "Session 0": "Uninvolved"
+    }
+}
+```

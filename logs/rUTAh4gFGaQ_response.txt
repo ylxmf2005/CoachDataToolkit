@@ -1,0 +1,45 @@
+Step1:
+- Session 0: [19, 54]
+- Session 1: [69, 100]
+- Session 2: [164, 175]
+
+Step2:
+- [SPEAKER_00]: Marker
+- [SPEAKER_01]: Uninvolved
+- [SPEAKER_02]: Coachee
+- [SPEAKER_03]: Coachee
+- [SPEAKER_05]: Coach
+
+Step3:
+```json
+{
+    "Session 0": [19, 54],
+    "Session 1": [69, 100],
+    "Session 2": [164, 175],
+    "[SPEAKER_00]": {
+        "Session 0": "Marker",
+        "Session 1": "Marker",
+        "Session 2": "Marker"
+    },
+    "[SPEAKER_01]": {
+        "Session 0": "Uninvolved",
+        "Session 1": "Uninvolved",
+        "Session 2": "Coachee"
+    },
+    "[SPEAKER_02]": {
+        "Session 0": "Coachee",
+        "Session 1": "Uninvolved",
+        "Session 2": "Uninvolved"
+    },
+    "[SPEAKER_03]": {
+        "Session 0": "Uninvolved",
+        "Session 1": "Coachee",
+        "Session 2": "Uninvolved"
+    },
+    "[SPEAKER_05]": {
+        "Session 0": "Coach",
+        "Session 1": "Coach",
+        "Session 2": "Coach"
+    }
+}
+```
