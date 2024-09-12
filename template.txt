@@ -5,31 +5,44 @@
 Above is a raw psychological coaching video transcription.
 Follow the 3 steps to complete your task:
 
-Step1: 
-Determine how many coaching sessions are present. 
-A session starts when the interaction between the coach and coachee begins.
-A session ends when:
-- If there is no commentary or epilogue from the Marker, end at the formal conclusion of the coaching interaction.
-- If there is a Marker’s final commentary or epilogue after the coaching interaction, extend the end to include the Marker's final words.
+Step1:
+Concisely summarize the video transcription.
 
-For each session, detemine the start line number and end line number
+Step2: 
+- A session starts when the coaching interaction between the coach and coachee begins, instead of the coach speeking alone or introduce the video.
+- A session ends whe the coaching interaction and marker's comment (if present) between the coach and coachee officialy ends. 
+The coach's summary, promotion, and conclusion of a video should not be included in the coaching session.
 
-Step2:
+Carefully examine and determine how many coaching sessions are present based on the criteria.
+For each session, detemine the start index number and end index number. 
+
+Step3:
 For each session identified in Step 1, analyze each speaker's role based on the following definitions:
 - Coach
 - Coachee
-- Marker: A thrid-party (not coach/coachee themselves) speaker comments/evaluates the coaching process or just narrates, not part of direct interaction between coach and coachee. 
-- Uninvolved: The speaker doesn't take part in this session / The speaker's role is unknown (can not be labeled as Coach/Coachee/Marker).
+- Marker: A speaker who comments on or evaluates the coaching process.
+- Uninvolved: The speaker doesn't take part in this session. 
+- Others: Unknown speaker or speaker with no practical use.
 
-Step3:
+Since this is a video transcription, a single person's voice might be recognized as two different speakers. If you notice a speaker whose behavior is similar to the coach or coachee, consider assigning them the appropriate role (coach/coachee) instead of labeling them as the marker.
+
+Step4:
 Structure the output in JSON format as illustrated in the example below. Session index starts from 0.
+
+Think carefully about each step and provide detailed reasoning and analysis.
+
+Known information (Your results must match the information here
+):
+{context}
 
 Example output:
 Step1:
-...
+{{step1_reasoning}}
 Step2:
-...
+{{step2_reasoning}}
 Step3:
+{{step2_reasoning}}
+Step4:
 ```json
 {{
     "Session 0" : [start1, end1],

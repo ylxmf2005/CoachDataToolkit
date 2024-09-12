@@ -1,11 +1,6 @@
 ## CoachDataToolkit
 
 ### Usage
-- Prompt: ./template.txt
-- Input: ./transcripts
-- AI Result: ./output
-- Human Result: ./human
-
 Recommended model: DeepSeek-V2-128k
 
 Install requirements.txt, set the DEEPSEEK_API_KEY in .env file, and then run `python main.py`
@@ -17,7 +12,7 @@ Install requirements.txt, set the DEEPSEEK_API_KEY in .env file, and then run `p
   - https://www.diffchecker.com/Okue5Zar/
   - https://www.diffchecker.com/VldlBvBD/
   - https://www.diffchecker.com/D3rCLRow/
-- 7qVNnXiSwks.srt (with 2 sessions, marker, marker(coach), marker(coachee) and human cohttps://www.diffchecker.com/FyIAHJh3/mparison)
+- 7qVNnXiSwks.srt (with 2 sessions, marker, marker(coach), marker(coachee) and human comparison)
   - https://www.diffchecker.com/7ER71jSr/
   - https://www.diffchecker.com/o7zTIRrn/
   - Cannot label marker(coach) or marker(coachee)

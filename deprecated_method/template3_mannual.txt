@@ -1,0 +1,138 @@
+{raw_transcription}
+The above is a transcription of a psychological coaching video. 
+
+In this video transcription, the coach, coachee, and a third-party marker are watching a coaching conversation between the coach and the coachee. 
+
+During this process, they insert their comments/evaluations/explanations/feelings at any time.
+
+Your task is to label the speakers as:
+
+1. Coach: The coach speaking directly to the coachee during the coaching conversation. 
+2. Coachee: The coachee speaking directly to the coach during the coaching conversation.
+3. Marker (Coach): The coach comments or evaluates the coaching process. If the coach are commenting/reviewing (not speaking during the coaching conversation), make sure to label him as Marker (Coach) instead of Coach.
+4. Marker (Coachee): The coachee comments or evaluates the coaching process. 
+5. Marker (Third-party): A third-party marker comments or evaluates the coaching process.
+
+Typically, at least two markers (Coach, Coachee, or Third-party) will engage together in discussion and commentary, rather than just one marker commenting.
+
+It is already known that the proportions of Marker(Coach) and Marker(Coachee) will be very high, and they usually appear consecutively. When it is uncertain whether to choose Coach/Marker(Coach) or Coachee/Marker(Coachee), please try to select the label with (Marker) (e.g., Marker(Coachee)).
+
+
+Example outut:
+```
+33
+00:02:09,267 --> 00:02:10,428
+Coach: What would you like to look at today? [Coach]
+
+34
+00:02:10,448 --> 00:02:10,708
+Coach: Okay. [Coach]
+
+35
+00:02:11,496 --> 00:02:11,616
+Coachee: Yeah. [Coachee]
+
+36
+00:02:11,797 --> 00:02:15,644
+Coachee: So I've been thinking about this, thinking about what I would love to explore. [Coachee]
+
+37
+00:02:15,664 --> 00:02:18,129
+Coachee: And I think what I would like to dive into is. [Coachee]
+
+38
+00:02:20,202 --> 00:02:29,445
+Coachee: Figuring out how to balance like doing what's best for myself while also, um, supporting others in my life. [Coachee]
+
+39
+00:02:29,885 --> 00:02:41,389
+Coachee: Uh, I feel like I have a lot of dreams and passions that I'm working towards, but also see opportunities where I can step in and support others who are working on their dreams and passions. [Coachee]
+
+40
+00:02:42,429 --> 00:02:49,231
+Coachee: Um, and trying to make sure that like, I'm balanced in that, like I'm not only focused on myself. [Coachee]
+
+41
+00:02:50,708 --> 00:02:59,852
+Coachee: but I'm also like lending a helping hand and being a friend and a support to others, if that makes sense. [Coachee]
+
+42
+00:03:02,033 --> 00:03:04,094
+Coach: It does, yeah, I see. [Coach]
+
+43
+00:03:05,815 --> 00:03:07,076
+Coach: Just have to get it out of the way. [Coach]
+
+44
+00:03:07,136 --> 00:03:08,316
+Coach: Why are they mutually exclusive? [Marker (Coach)]
+
+46
+00:03:12,078 --> 00:03:15,459
+Coach: What do you think, Heather? [Marker (Coach)]
+
+47
+00:03:15,479 --> 00:03:16,480
+Coach: Right from the get-go. [Marker (Coach)]
+
+48
+00:03:17,250 --> 00:03:18,111
+Coachee: I thought it was great. [Marker (Coachee)]
+
+49
+00:03:18,131 --> 00:03:20,352
+Coachee: I thought it was a really great question. [Marker (Coachee)]
+
+50
+00:03:21,553 --> 00:03:23,375
+Coachee: I think I say that in the video. [Marker (Coachee)]
+
+51
+00:03:23,735 --> 00:03:27,438
+Coachee: I need a second to process what you said, but it was really good. [Marker (Coachee)]
+
+52
+00:03:29,340 --> 00:03:32,202
+Coach: To serve my resting coach face is not the best. [Marker (Coach)]
+
+53
+00:03:32,662 --> 00:03:34,504
+Coach: I'm puzzling it out in my head. [Marker (Coach)]
+
+54
+00:03:34,524 --> 00:03:38,167
+Coach: I don't know. [Marker (Coach)]
+
+55
+00:03:38,187 --> 00:03:39,187
+Coach: I always find it interesting. [Marker (Coach)]
+
+56
+00:03:39,207 --> 00:03:40,969
+Coach: I like that question a lot. [Marker (Coach)]
+
+57
+00:03:41,009 --> 00:03:42,370
+Coach: We'll see how it goes. [Marker (Coach)]
+
+58
+00:03:43,931 --> 00:03:44,652
+Coachee: I don't think they are. [Coachee]
+
+59
+00:03:47,284 --> 00:03:48,164
+Coach: What's still overlapping? [Coach]
+
+60
+00:03:48,785 --> 00:03:56,108
+Coachee: I feel the tension of, I think sometimes I'm like, I'm limited as a human. [Coachee]
+
+61
+00:03:56,208 --> 00:03:58,489
+Coachee: Like I don't have all the time in the world. [Coachee]
+
+62
+00:03:58,569 --> 00:04:05,652
+Coachee: I don't have all the focus or the energy, and I have to be careful about what I commit to or say yes to, um. [Coachee]
+```

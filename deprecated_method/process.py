@@ -179,7 +179,7 @@ class TranscriptProcessor:
 if __name__ == "__main__":
     load_dotenv()
     processor = TranscriptProcessor(
-        input_folder = "./transcripts",
+        input_folder = "./outputs/0",
         output_folder = "./outputs",
         log_folder = "./logs",
         

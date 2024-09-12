@@ -1,0 +1,103 @@
+{raw_transcription}
+The above is a transcription of a psychological coaching video. 
+
+In this video transcription, the coach, coachee, and a third-party marker are watching a coaching conversation video between the coach and the coachee. 
+
+During this process, they pause the coaching conversation video between coach and coachee and insert their comments/evaluations/explanations/feelings at any time.
+
+Your task is to label the speakers as:
+
+1. Coach: The coach speaking directly to the coachee during the coaching conversation. 
+2. Coachee: The coachee speaking directly to the coach during the coaching conversation.
+3. Marker (Coach): The coach comments or evaluates the coaching process. If the coach are commenting/reviewing (not speaking during the coaching conversation), make sure to label him as Marker (Coach) instead of Coach.
+4. Marker (Coachee): The coachee comments or evaluates the coaching process. 
+5. Marker (Third-party): A third-party marker comments or evaluates the coaching process.
+
+Typically, at least two markers (Coach, Coachee, or Third-party) will engage together in discussion and commentary, rather than just one marker commenting.
+
+It is already known that the proportions of Marker(Coach) and Marker(Coachee) will be very high, and they usually appear consecutively. When it is uncertain whether to choose Coach/Marker(Coach) or Coachee/Marker(Coachee), please select the label with (Marker) (e.g., Marker(Coachee)).
+
+
+Example Output1:
+```
+0. Coach: What would you like to look at today? [Coach]
+
+1. Coach: Okay. [Coach]
+
+2. Coachee: Yeah. [Coachee]
+
+3. Coachee: So I've been thinking about this, thinking about what I would love to explore. [Coachee]
+
+4. Coachee: And I think what I would like to dive into is. [Coachee]
+
+5. Coachee: Figuring out how to balance like doing what's best for myself while also, um, supporting others in my life. [Coachee]
+
+6. Coachee: Uh, I feel like I have a lot of dreams and passions that I'm working towards, but also see opportunities where I can step in and support others who are working on their dreams and passions. [Coachee]
+
+7. Coachee: Um, and trying to make sure that like, I'm balanced in that, like I'm not only focused on myself. [Coachee]
+
+8. Coachee: but I'm also like lending a helping hand and being a friend and a support to others, if that makes sense. [Coachee]
+
+9. Coach: It does, yeah, I see. [Coach]
+
+10. Coach: Just have to get it out of the way. [Coach]
+
+11. Coach: Why are they mutually exclusive? [Marker (Coach)]
+
+12. Coach: What do you think, Heather? [Marker (Coach)]
+
+13. Coach: Right from the get-go. [Marker (Coach)]
+
+14. Coachee: I thought it was great. [Marker (Coachee)]
+
+15. Coachee: I thought it was a really great question. [Marker (Coachee)]
+
+16. Coachee: I think I say that in the video. [Marker (Coachee)]
+
+17. Coachee: I need a second to process what you said, but it was really good. [Marker (Coachee)]
+
+18. Coach: To serve my resting coach face is not the best. [Marker (Coach)]
+
+19. Coach: I'm puzzling it out in my head. [Marker (Coach)]
+
+20. Coach: I don't know. [Marker (Coach)]
+
+21. Coach: I always find it interesting. [Marker (Coach)]
+
+22. Coach: I like that question a lot. [Marker (Coach)]
+
+23. Coach: We'll see how it goes. [Marker (Coach)]
+
+24. Coachee: I don't think they are. [Coachee]
+
+25. Coach: What's still overlapping? [Coach]
+
+26. Coachee: I feel the tension of, I think sometimes I'm like, I'm limited as a human. [Coachee]
+
+27. Coachee: Like I don't have all the time in the world. [Coachee]
+
+28. Coachee: I don't have all the focus or the energy, and I have to be careful about what I commit to or say yes to, um. [Coachee]
+```
+
+Typically, after the marker, all previous coaches of the coachee can be designated as "Marker (Coach)." This applies to all coaches before the marker as well. For example:
+
+Example Output2:
+```
+0. Coach: I'm not sure, but let's keep it going. [Marker (Coach)]
+
+1. Marker: Okay. [Makrer (Third-party)]
+
+2. Marker: All right. [Makrer (Third-party)]
+
+3. Coach: I think I started this question with is, which is interesting to me, but we got to the clarity point. [Marker (Coach)]
+
+4. Coach: So we'll see where we're at. [Marker (Coach)]
+
+5. Coach: But I know it's happening. [Marker (Coach)]
+
+6. Coachee: But I think just clarity. [Coachee]
+
+7. Coachee: I think you're taking a science question... [Coachee]
+
+8. Coachee: And we could dive a little deeper. [Coachee]
+```

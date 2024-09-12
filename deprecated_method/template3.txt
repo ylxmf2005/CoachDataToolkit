@@ -1,0 +1,10 @@
+In the transcript of the coaching session, the Coach plays two roles: Coach and Marker.
+
+Marker refers to when the Coach is commenting on or evaluating the coaching process with another Marker.
+In this case, the Coach is discussing a previously completed coaching session with another Marker, where the Coach had a conversation with a Coachee.
+
+For each entry in the transcript:
+If the Coach is speaking with the Coachee, their label should remain Coach.
+If the Coach is speaking with another Marker, or reviewing and commenting on the coaching session, replace the Coach label with Marker (Coach) to reflect their evaluative role.
+
+Please go ahead and make these replacements in the transcript where necessary.

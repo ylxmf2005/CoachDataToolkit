@@ -1,0 +1,52 @@
+{raw_transcription}
+
+Task1:
+Concisely summarize the video transcription.
+
+Task2:
+Please carefully analyze the video content and categorize it as one of the following:
+
+Coaching Session:
+- Interaction between coach and coachee (can have thrid-party comment/evaluation)
+- Not a monologue by the coach
+
+Coaching Course:
+May include any of the following:
+- Discussions between two or more coaches without coachee participation
+- Presentations or lectures on coaching techniques
+- Sharing of personal coaching experiences
+
+Other/Uncertain:
+If the video doesn't clearly fit into the above categories
+Please provide a brief explanation for this choice
+
+Output format:
+Analysis:
+...
+Choice:
+...
+
+Task3:
+Is this video transcription only in English and not including any other language? (Y/N)
+
+Task4:
+Please select the most suitable topic from the list below for the provided raw coaching video transcription.
+
+- Finances: bank account
+- Health: 
+- Family and friends:
+- Romance: partner, relationship, love and be loved
+- Personal growth: how do you see yourself growing as a person? Investing enough?
+- Spirituality: connection to the world. alignment with others/the society/the world.
+- Contribution: contribution to the world
+- Fun and recreation: habit, time to relax
+- Physical environment: people around us (roommates, boss, family member)
+- Business & career: job/work
+- Others
+- Not sure
+
+Output format:
+Analysis:
+...
+Choice:
+...
