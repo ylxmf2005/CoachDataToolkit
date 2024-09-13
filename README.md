@@ -1,5 +1,7 @@
 ## CoachDataToolkit
 
+Warning: The current data labeling results from this pipeline are not completely reliable. Manual review and correction may be necessary.
+
 ### Usage
 Recommended model: DeepSeek-V2-128k
 

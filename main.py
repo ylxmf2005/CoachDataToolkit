@@ -64,7 +64,7 @@ class TranscriptProcessor:
             openai_api_base = "https://api-sg.moonshot.ai/v1", # Out of China mainland 
             openai_api_key = os.getenv("MOONSHOT_API_KEY"),
             model_name = "moonshot-v1-128k",
-            max_tokens = 20288,
+            max_tokens = 45010,
             streaming=True
         )
             
@@ -313,9 +313,9 @@ class TranscriptProcessor:
         last_name = None
         begin_from = None
         
-        self.predefined_input = ["Y", "John is the Coach, Raj Anderson is the Marker. There is only one coaching session. ", "Y" , "Y", "Y"]
+        # self.predefined_input = ["Y", "John is the Coach, Raj Anderson is the Marker. There is only one coaching session. ", "N" , "N", "N"]
         
-        # self.predefined_input = [None, None, None, None, None]
+        self.predefined_input = [None, None, None, None, None]
         
         if last_name == None and begin_from == None:
             begin_from = input("Please input the file name to begin from: (Only press enter to start from the beginning)\n")
@@ -333,7 +333,7 @@ class TranscriptProcessor:
                 if file_name == last_name:
                     flag = True
                 continue
-            
+                        
             # Step 0: Ask for context
             file_name_with_srt = file_name + ".srt"
             
@@ -393,6 +393,7 @@ class TranscriptProcessor:
             else:
                 self.further_process(file_name)
                 print(f"{file_name} further processed.")
+                # input("Press Enter to continue...")
 
 if __name__ == "__main__":
     load_dotenv()
